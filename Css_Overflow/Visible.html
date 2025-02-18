@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Overflow</title>
+        <style>
+            h2{color:darkgreen;text-align: center;text-decoration: underline;}
+            li{color:blueviolet}   
+
+            #visible{
+                width:100px;
+                height:90px;
+                border:1px solid;
+                overflow:visible;
+            }
+            #hidden{
+                width:100px;
+                height:80px;
+                border:1px solid;
+                overflow:hidden;
+            }
+            #scroll{
+                width:100px;
+                height:80px;
+                border:1px solid;
+                overflow:scroll;
+            }
+            #auto{
+                width:100px;
+                height:80px;
+                border:1px solid;
+                overflow:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>CSS OVERFLOW</h2>
+        <p>The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars.</p>
+        <ol type="Number">
+            <li>Visible: The content is not clipped and is visible outside the element box.</li>
+            <p id="visible">The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars. </p>
+            
+            <br><br>
+            <li>Hidden: The overflow is clipped and the rest of the content is invisible.</li>
+            <p id="hidden">The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars.</p>
+
+            <li>Scroll: The overflow is clipped but a scrollbar is added to see the rest of the content. The scrollbar can be horizontal or vertical. </li>
+            <p id="scroll">The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars.</p>
+
+            <li>Auto: It automatically adds a scrollbar whenever it is required.</li>
+            <p id="auto">The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars.</p>
+        </ol>
+
+    </body>
+</html>
