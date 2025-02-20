@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vertical Navbar</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                background-color: rgba(24, 15, 92, 0.981);
+                align-items: center;
+            }
+            .navbar{
+                display: flex;
+                flex-direction: column;
+                border: 2px solid green;
+                border-radius: 20px;
+                margin-top: 50px;
+                width: 300px;
+                overflow: hidden;
+            }
+            .item{
+                background-color: white;
+                color:green;
+                padding:10px 30px;
+                border-bottom: 2px solid green;
+                font-size: 18px;
+                text-align: center;   
+            }
+            .item:hover{
+                background-color: green;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Services</div>
+            <div class="item">Contact</div>
+        </div>
+    </body>
+</html>
