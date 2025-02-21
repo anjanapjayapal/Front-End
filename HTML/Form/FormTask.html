@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="C:\Users\ANJANA\OneDrive\Desktop\PYTHON FULL STACK\MODULE 3- frontend\HTML\Form\external.css">
+
+    </head>
+    <body>
+        <form>
+        <div class="formgroup">
+            <label for="fname">FIRST NAME</label>
+            <input type="text" id="fname" name="fname" required maxlength="30"> (max 30 characters and A-Z)
+        </div>
+
+        <div class="formgroup">
+            <label for="lname">LAST NAME</label>
+            <input type="text" id="lname" name="lname" required maxlength="30"> (max 30 characters and A-Z)
+        </div>
+
+        <div class="formgroup">
+            <label>DATE OF BIRTH</label>
+            <select id="day" name="day">
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <!-- 1 to 31 options-->
+            </select>
+            <select id="month" name="month">
+                <option value="">Month</option>
+                <!-- Jan to Dec options-->
+            </select>
+            <select id="year" name="year">
+                <option value="">Year</option>
+            </select>
+        </div>
+
+        <div class="formgroup">
+            <label for="email">EMAIL ID</label>
+            <input type="text" id="email" name="email">
+        </div>
+        
+        <div class="formgroup">
+            <label for="nbr">MOBILE NUMBER</label>
+            <input id="nbr" name="nbr">(10 digit number)
+        </div>
+
+        <div class="formgroup">
+            <label for="gen">GENDER</label>
+            <label for="male">Male
+            <input type="radio" id="male" name="gen" value="male"></label>
+            <label for="female">Female
+            <input type="radio" id="female" name="gen" value="female"></label>
+        </div>
+
+        <div class="formgroup">
+            <label for="address">ADDRESS</label>
+            <textarea id="address" name="address" rows="3" cols="30"></textarea>
+        </div>
+        <div class="formgroup">
+            <label for="city">CITY</label>
+            <input type="text" id="city">(max 30 characters a-z and A-Z)
+        </div>
+        <div class="formgroup">
+            <label for="pin">PIN CODE</label>
+            <input type="text" id="pin">(6 digit number)
+        </div>
+        <div class="formgroup">
+            <label for="state">STATE</label>
+            <input type="text" id="state">(max 30 characters a-z and A-Z)
+        </div>
+        <div class="formgroup">
+            <label for="city">COUNTRY</label>
+            <select id="country" name="country">
+                <option value="">India</option>
+            </select>
+        </div>
+
+        <div class="formgroup">
+            <label for="hobby">HOBBIES</label>
+            <label for="draw">Drawing<input type="checkbox" id="draw" name="hobby" value="Drawing"></label>
+            <label for="sing">Singing<input type="checkbox" id="sing" name="hobby" value="Singing"></label>
+            <label for="dan">Dancing<input type="checkbox" id="dan" name="hobby" value="Dancing"></label>
+            <label for="sket">Sketching<input type="checkbox" id="sket" name="hobby" value="Sketching"></label>
+            <label for="other">Others<input type="textbox" id="other" name="hobby" ></label>
+        </div>
+
+        <div>
+            <label for="qual">QUALIFICATION</label>
+            <div class="table">
+            <table>
+                <tr>
+                    <th>SI.No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" id="1"></td>
+                    <td><input type="text" id="1"></td>
+                    <td><input type="text" id="1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" id="2"></td>
+                    <td><input type="text" id="2"></td>
+                    <td><input type="text" id="2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" id="3"></td>
+                    <td><input type="text" id="3"></td>
+                    <td><input type="text" id="3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text" id="4"></td>
+                    <td><input type="text" id="4"></td>
+                    <td><input type="text" id="4"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th></th>
+                    <td>(10 Char Max)</td>
+                    <td>(Upto 2 Decimal)</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="formgroup">
+            <label for="courses">COURSES APPLIED FOR</label>
+            <label for="php"><Input type="radio" id="php" name="courses" value="Php" >Php</label>
+            <label for="python"><Input type="radio" id="python" name="courses" value="Python" >Python</label>
+            <label for="java"><Input type="radio" id="java" name="courses" value="Java" >Java</label>
+                <label for="dig"><Input type="radio" id="dig" name="courses" value="Digital" >Digital Marketing</label>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        </div>
+    </form>
+
+    </body>
+</html>
