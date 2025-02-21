@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Dropdown List</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-btn {
+                background-color: green;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 150px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: green;
+                padding: 10px;
+                display: block;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+            .dropdown-content a:hover {
+                background-color: lightgreen;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button class="dropdown-btn">Select Option</button>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+    </body>
+</html>
