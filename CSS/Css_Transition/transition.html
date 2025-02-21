@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #box {
+                background-color: antiquewhite;
+                color: darkblue;
+                width: 150px;
+                height: 50px;
+                border: 2px solid rgb(211, 197, 202);
+                transition: width 0.5s;
+                padding: 10px;
+            }
+            #box:hover {
+                width: 300px;
+            }
+            #link a {
+                text-decoration: none;
+                color: blue;
+                font-size: 18px;
+            }
+            #link a:hover {
+                text-decoration: underline;
+            }
+            #link a:visited {
+                color: purple;
+            }
+            #button button {
+                background-color: lightcoral;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            #button button:hover {
+                background-color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">CSS Transition Task</h2>
+        <h4>1. Box Transition</h4>
+        <p>Smoothly expands the box width when hovered.</p>
+        <div id="box">
+            The size of this box will increase when the cursor hovers over it.
+        </div>
+        <br><br>
+        <h4>2. Link Transition</h4>
+        <p>Underlines the link smoothly when hovered.</p>
+        <div id="link">
+            <a href="#">Youtube</a>
+        </div>
+        <br><br>
+        <h4>3. Button with hover effect</h4>
+        <p>Changes button color on hover.</p>
+        <div id="button">
+            <button>Click Me</button>
+        </div>
+    </body>
+</html>
