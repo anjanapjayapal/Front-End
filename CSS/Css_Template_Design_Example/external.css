@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0; /* Removes all default margins */
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    width: 800px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    background-color: rgb(21, 5, 83);
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+    gap: 20px;
+}
+
+#logo {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.intro {
+    background-color: rgb(135, 233, 135);
+    height: 180px;
+    padding: 10px 0; /* Adjusted to remove unnecessary height */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 5px; /* Adjust spacing */
+}
+
+#p1 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#button {
+    display: block;
+    margin: 30px auto;
+    background-color: rgb(9, 9, 69);
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#p2 {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#p3 {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin: 20px ;
+}
+
+span {
+    color: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.box-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    margin:20px;
+}
+
+.box {
+    text-align: center;
+    font-size: 18px;
+    height: 150px;
+    width: 200px;
+    background-color: grey;
+    padding:60px;
+}
+
+.he {
+    font-size: 16px;
+    color: rgb(44, 3, 83);
+    margin-top: 5px;
+}
+
+.pe {
+    font-size: 12px;
+    color: black;
+    margin-top: 3px;
+}
+
