@@ -1,0 +1,31 @@
+body{
+    background-color:#000435; color: white; font-size:13px; 
+    text:white;
+}
+form{
+    width: 900px; padding:20px; border: 1px solid white;
+}
+.formgroup{
+    margin-bottom: 10px;
+    display: flex;
+    gap:5px;
+}
+.formgroup label{
+    display:inline-block;
+    width:180px;
+}
+input, textarea{
+    background:none; border:0.5px solid white;color: white;
+}
+.table{
+    position: relative;
+    left:250px;
+    display:flex;  
+}
+.submit{
+    text-align: center;
+}
+input[type="submit"], input[type="reset"]{
+    background-color: white;
+    color:black;
+}

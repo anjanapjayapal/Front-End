@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="external.css">
+        <script src="external.js"></script>
+    </head>
+    <body>
+        <form onsubmit="return valid()">
+        <div class="formgroup">
+            <label for="fname">FIRST NAME</label>
+            <input type="text" id="fname" name="fname" required maxlength="30"> (max 30 characters and A-Z)
+        </div>
+
+        <div class="formgroup">
+            <label for="lname">LAST NAME</label>
+            <input type="text" id="lname" name="lname" required maxlength="30"> (max 30 characters and A-Z)
+        </div>
+
+        <div class="formgroup">
+            <label>DATE OF BIRTH</label>
+            <select id="day" name="day">
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <!-- 1 to 31 options-->
+            </select>
+            <select id="month" name="month">
+                <option value="">Month</option>
+                <!-- Jan to Dec options-->
+            </select>
+            <select id="year" name="year">
+                <option value="">Year</option>
+            </select>
+        </div>
+
+        <div class="formgroup">
+            <label for="email">EMAIL ID</label>
+            <input type="text" id="email" name="email">
+        </div>
+        
+        <div class="formgroup">
+            <label for="nbr">MOBILE NUMBER</label>
+            <input type="text" id="nbr" name="nbr">(10 digit number)
+        </div>
+
+        <div class="formgroup">
+            <label for="gen">GENDER</label>
+            <label for="male">Male
+            <input type="radio" id="male" name="gen" value="male"></label>
+            <label for="female">Female
+            <input type="radio" id="female" name="gen" value="female"></label>
+        </div>
+
+        <div class="formgroup">
+            <label for="address">ADDRESS</label>
+            <textarea id="address" name="address" rows="3" cols="30"></textarea>
+        </div>
+        <div class="formgroup">
+            <label for="city">CITY</label>
+            <input type="text" id="city">(max 30 characters a-z and A-Z)
+        </div>
+        <div class="formgroup">
+            <label for="pin">PIN CODE</label>
+            <input type="text" id="pin">(6 digit number)
+        </div>
+        <div class="formgroup">
+            <label for="state">STATE</label>
+            <input type="text" id="state">(max 30 characters a-z and A-Z)
+        </div>
+        <div class="formgroup">
+            <label for="country">COUNTRY</label>
+            <select id="country" name="country">
+                <option value="">India</option>
+            </select>
+        </div>
+
+        <div class="formgroup">
+            <label for="courses">COURSES APPLIED FOR</label>
+            <label for="php"><input type="radio" id="php" name="courses" value="Php" >Php</label>
+            <label for="python"><input type="radio" id="python" name="courses" value="Python" >Python</label>
+            <label for="java"><input type="radio" id="java" name="courses" value="Java" >Java</label>
+                <label for="dig"><input type="radio" id="dig" name="courses" value="Digital" >Digital Marketing</label>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        
+    </form>
+
+    </body>
+</html>
