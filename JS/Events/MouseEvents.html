@@ -1,0 +1,41 @@
+<!--onclick,ondblclick,onmousemove,onmouseover,onmouseout-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+    <body onmousemove="showtime()">
+
+        <p>Current Time: <span id="time"></span></p>
+        <button onclick="document.getElementById('p').innerHTML=Date();">Click to view the Date</button>
+        <p id="p"></p>
+
+        <button ondblclick="showday()">Double click to get the day</button>
+        <p id="p2"></p>
+
+        <input type="text"  onmouseover="this.style.backgroundColor='red';" onmouseout="this.style.backgroundColor='blue';">
+
+    
+        <script>
+            function showday(){
+                let days=["Sunday","Monday","Tuesday","wednesday","Thursday","Friday","Saturday"]
+                document.getElementById('p2').innerHTML=days[new Date().getDay()]
+            }
+
+            function showtime(){
+                let now=new Date();
+                let hours= now.getHours();
+                let min= now.getMinutes();
+                let sec= now.getSeconds();
+                let ampm=hours>12?"PM":"AM";
+
+                hours=hours%12 || 12;
+                min=min<10?"0"+min:min;
+                sec=sec<10?"0"+sec:sec;
+
+                let currtime=`${hours} ${ampm}: ${min}: ${sec}`;
+                document.getElementById('time').innerHTML=currtime;
+            }
+        </script>
+    </body>
+</html>

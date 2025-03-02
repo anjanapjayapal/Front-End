@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pop-up</title>
+    </head>
+    <body>
+        <center><h1><font color="green">JS PopUp Box</font></h1></center>
+        <p>In JavaScript, there are three types of popup boxes: alert, confirm, and prompt.</p>
+        <ol>
+            <li>Alert Box
+                <ul>
+                    <li>An alert box in JavaScript is a popup window that displays a simple message to the user. It is triggered by the alert() function and pauses code execution 
+                        until the user clicks the “OK” button to close it.
+                    </li>
+                </ul>
+            </li>
+            <li>Prompt Box
+                <ul>
+                    <li>A prompt box in JavaScript is a popup window that asks the user for input. It is triggered by the prompt() function, which displays a message and input field, 
+                        allowing the user to provide a response or cancel.
+                    </li>
+                </ul>
+            </li>
+            <li>Confirm Box
+                <ul>
+                    <li>It is a type of pop-up box that is used to get authorization or permission from the user. 
+                        The user has to press the OK or Cancel button to proceed.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h4>Example</h4>
+        
+        <script>
+            let name = prompt("Enter your name:");
+            if(name){
+                let c=confirm("Press OK to confirm");
+                if(c==true){
+                    alert("You have entered the name");
+                }
+                else{
+                    alert("You cancelled the confirmation");
+                }
+            }
+            else{
+                alert("Please enter your name");
+            }
+        </script>
+    </body>
+</html>
